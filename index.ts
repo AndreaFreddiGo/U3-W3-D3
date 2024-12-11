@@ -59,12 +59,53 @@ type Days =
 // const numbers: Array<number> = [1, 2, 3]
 
 // 11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.
+const tupla: [string, string, string, number, number] = ['a', 'b', 'c', 1, 2]
+
 // 12) Qual è la differenza tra type e interface?
+// Un type definisce un tipo fra quelli disponibili in TypeScript, mentre un'interfaccia è un costrutto che definisce la struttura di un oggetto.
+
 // 13) Definisci un'interfaccia in TypeScript per un oggetto dotato di proprietà "firstname", "lastname", e "age".
+interface Person {
+  firstname: string
+  lastname: string
+  age: number
+}
+
 // 14) Crea un'interfaccia per un utente con email obbligatoria e telefono opzionale.
+interface User {
+  email: string
+  phone?: string
+}
+
 // 15) Crea un array tipizzato di oggetti "Studente" con nome e voto.
+interface Student {
+  name: string
+  grade: number
+}
+const students: Student[] = []
+
 // 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
+interface Vehicle {
+  wheels: number
+}
+interface Auto extends Vehicle {
+  doors: number
+}
+
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
+const myCar: Auto = {
+  wheels: 4,
+  doors: 5,
+}
+
 // 18) Cosa sono i Generics in TypeScript?
+// I Generics in TypeScript sono metodo che permette di creare componenti riutilizzabili che lavorano su tipi diversi.
+
 // 19) È possibile avere più tipi generici in un'interfaccia?
+// Sì, è possibile
+
 // 20) Crea un'interfaccia generica per una risposta API.
+interface ApiResponse<T> {
+  data: T
+  status: number
+}

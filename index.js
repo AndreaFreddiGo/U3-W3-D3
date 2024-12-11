@@ -40,12 +40,10 @@ var union = 10;
 // const numbers: number[] = [1, 2, 3]
 // const numbers: Array<number> = [1, 2, 3]
 // 11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.
-// 12) Qual è la differenza tra type e interface?
-// 13) Definisci un'interfaccia in TypeScript per un oggetto dotato di proprietà "firstname", "lastname", e "age".
-// 14) Crea un'interfaccia per un utente con email obbligatoria e telefono opzionale.
-// 15) Crea un array tipizzato di oggetti "Studente" con nome e voto.
-// 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
+var tupla = ['a', 'b', 'c', 1, 2];
+var students = [];
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
-// 18) Cosa sono i Generics in TypeScript?
-// 19) È possibile avere più tipi generici in un'interfaccia?
-// 20) Crea un'interfaccia generica per una risposta API.
+var myCar = {
+    wheels: 4,
+    doors: 5,
+};
